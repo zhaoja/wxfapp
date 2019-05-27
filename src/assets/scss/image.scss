@@ -1,0 +1,71 @@
+.icon {
+    background-image: url(../images/icon.png);
+// border: 1px solid ;
+}
+.mine {
+    .top {
+        background-image: url(../images/bg1.png);
+	}
+}
+.icon-m {
+	background-image: url(../images/index-icon.png);
+	// border: 1px solid;
+}
+.navigation{
+    .icon{
+        background-image: url(../images/footer.png);
+    }
+}
+//新加
+.icon-search{
+    background-image: url(../images/index-icon.png);
+}
+.icon-code{
+    background-image: url(../images/index-icon.png);
+}
+.icon-location{
+    background-image: url(../images/index-icon.png);
+}
+.icon-info{
+    background-image: url(../images/index-icon.png);
+}
+.icon-poi{
+    background-image: url(../images/index-icon.png);
+}
+.icon-login{
+    background-image: url(../images/login-icon.png);
+}
+
+$placeholderSize:15px;
+$placeholderColor:#BABABA;
+
+::-webkit-input-placeholder { /* WebKit browsers */
+color:$placeholderColor;font-size:$placeholderSize;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color:$placeholderColor;font-size:$placeholderSize;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color:$placeholderColor;font-size:$placeholderSize;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+color:$placeholderColor;font-size:$placeholderSize;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+color: $placeholderColor;font-size:$placeholderSize;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+color:$placeholderColor;font-size:$placeholderSize;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+color:$placeholderColor;font-size:1$placeholderSize;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+color:$placeholderColor;font-size:$placeholderSize;
+}

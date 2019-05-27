@@ -1,0 +1,479 @@
+$orange: #FA5F3B;
+$blue:#40A9FF;
+$white: #ffffff;
+$grey: #cccccc;
+$col0:#000000;
+$col3:#333333;
+$col6:#666666;
+$col9:#999999;
+$colf5:#f5f5f5;
+$colc:#cccccc;
+$cole:#eeeeee;
+$orange2:#FA5F3B;
+$blue:#40A9FF;
+$headbgcolor:$white;
+$headcolor:$col3;
+
+$font12:12px;
+$font13:13px;
+$font14:14px;
+$font15:15px;
+$font16:16px;
+$font17:17px;
+$font18:18px;
+//登录
+.login {
+    &.bg-gray{
+        // background-color: #f6f6f6;
+    }
+    min-height: 100%;
+    position: absolute;
+    width: 100%;
+    background: $white;
+    .logo{
+        width:80px;
+        height:80px;
+        background: #D8D8D8;
+        text-align: center;
+        border-radius: 80px;
+        line-height: 80px;
+        margin:10px auto 28px auto;
+    }
+    form {
+        margin-top:45px;
+        padding: 17px 25px 0 !important;
+        .form-item{
+            border-bottom: 1px solid #E5E5E5;
+            padding:10px 0;
+            position: relative;
+            overflow: hidden;
+            i.icon{
+                background-image: url(../images/login-icon.png);
+                position:absolute;
+                display:inline-block;
+                width:18px;
+                height:18px;
+                margin-left:9px;
+                margin-top:1.5px;
+                background-size: 82px 56px;
+                &.pull-right{
+                    right:10px;
+                    width:16px;
+                    height:16px;
+                    top:13px;
+                }
+            }
+            
+            i.icon-phone{
+                width: 18px;
+                height: 18px;
+                background-position: -5px -33px;
+            }
+            i.icon-pwd{
+                width: 18px;
+                height: 18px;
+                background-position: -33px -5px;
+            }
+            i.icon-imgcode{
+                width: 18px;
+                height: 18px;
+                background-position: -33px -33px;
+            }
+            i.icon-smscode{
+                width: 18px;
+                height: 18px;
+                background-position: -5px -5px;
+            }
+            i.icon-openeye{
+                width: 18px;
+                height: 18px;
+                background-position: -61px -5px;
+            }
+            i.icon-eye{
+                width: 16px;
+                height: 16px;
+                background-position: -61px -31px;
+            }
+            .codeButton {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+				z-index:10;
+                button {
+                    font-size: 14px;
+                    line-height: 26px;
+                    height: 30px;
+                    border-radius: 5px;
+                    margin-top: 8px;
+                    padding: 0 7px;
+                    color:$orange;
+                    background-color:white;
+                }
+            }
+            p {
+                font-size: $font18;
+                line-height: 14px;
+                margin-top: 19px;
+                margin-bottom: 79px;
+            }
+            .imgCode{
+                height:30px;
+                width:70px;
+                margin-top: 5.5px;
+            }
+            input[type='password'],
+            input[type='text'],
+            input[type='number'] {
+                width: calc( 100% - 36px );
+                height: 21px;
+                line-height: 21px;
+                border: 0;
+                padding: 0;
+                font-size: $font15;
+                float: right;
+            }
+            input::-webkit-input-placeholder {
+                color: #BABABA;
+            }
+            input:-ms-input-placeholder {
+                //      line-height: 1.0rem;
+            }
+            input:-moz-placeholder {
+                //      line-height: 1.0rem;
+            }
+            input::-moz-placeholder {
+                //      line-height: 1.0rem
+            }
+        }
+        
+    }
+    .oparote-list{
+        margin-top:23px;
+        a{
+            display:inline-block;
+            color:$orange;
+            &.pull-left{
+                float: left;
+            }
+            &.pull-right{
+                float: right;
+            }
+        }
+    }
+    .oparote-list-login{
+        margin-top:12px;
+        a{
+            display:inline-block;
+            &.pull-left{
+                float: left;
+            }
+            &.pull-right{
+                color:$orange;
+                float: right;
+            }
+        }
+    }
+    .alert {
+        color: $orange;
+        font-size: 14px;
+        margin: 5px 0 15px 0;
+    }
+    .ban {
+        color: $orange;
+    }
+    .disban {
+        color: $orange;
+    }
+    .flolayer {
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        text-align: center;
+		z-index:99;
+        .inner {
+            width: 300px;
+            background: $white;
+            margin: auto;
+            margin-top: 125px;
+            border-radius: 5px;
+            position: relative;
+            i {
+                position: absolute;
+                right: -10px;
+                top: -10px;
+            }
+            h3 {
+                font-size: 18px;
+                line-height: 18px;
+                padding-top: 30px;
+                font-weight: 400;
+            }
+            .text {
+                margin: 15px 0;
+                p {
+                    text-align: left;
+                    margin: 10px 30px;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: $col6;
+                }
+            }
+            .Iagree {
+                background: rgb(252, 238, 237);
+                width: 100%;
+                height: 50px;
+                color: $orange
+            }
+        }
+    }
+    .lbtn-container{
+        padding:0 25px;
+        .lbtn {
+            width: 100%;
+            height: 45px;
+            border-radius: 22.5px;
+            margin-top: 30px;
+            font-size: 15px;
+        }
+        .longbtn1 {
+            background: #cccccc;
+            color: $white;
+        }
+        .longbtn2 {
+            background: $orange;
+            color: $white;
+        }
+    }
+    
+    .agree {
+        position: relative;
+        font-size: 14px;
+        color: #999999;
+        margin-top: 18px;
+        div {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            span {
+                display: inline-block;
+                position: absolute;
+                margin-left: 8px;
+                line-height: 14px;
+                font-size: $font14;
+                color: $col9;
+                a {
+                    font-size: $font14;
+                    color: #3fa1fc;
+                    text-decoration: underline;
+                }
+            }
+            input {
+                width: 18px;
+                height: 18px;
+                opacity: 0;
+                position: absolute;
+                margin-top: -3px;
+            }
+            i {
+                color: #cccccc;
+                margin-top: -4px;
+            }
+            .icon-check {
+                margin-left: -22px;
+            }
+        }
+    }
+}
+
+.forgetpwd {
+    &.bg-gray{
+        background-color: #f6f6f6;
+    }
+    min-height: 100%;
+    position: absolute;
+    width: 100%;
+    background: $white;
+    form {
+        background-color:white;
+        margin-top:55px;
+        padding: 0 15px!important;
+        .form-item{
+            border-bottom: 1px solid #E5E5E5;
+            padding:10px 0;
+            position: relative;
+            overflow: hidden;
+            .codeButton {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+				z-index:10;
+                button {
+                    font-size: 14px;
+                    line-height: 26px;
+                    height: 30px;
+                    border-radius: 5px;
+                    margin-top: 10px;
+                    padding: 0 7px;
+                    color:$orange;
+                    background-color:white;
+                }
+                button:disabled{
+                    color:$col9;
+                }
+            }
+            p {
+                font-size: $font18;
+                line-height: 14px;
+                margin-top: 19px;
+                margin-bottom: 79px;
+            }
+            .imgCode{
+                height:30px;
+                width:70px;
+                margin-top: 10px;
+            }
+            input[type='password'],
+            input[type='text'],
+            input[type='number'] {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                border: 0;
+                padding: 0;
+                font-size: $font15;
+                float: right;
+            }
+            input::-webkit-input-placeholder {
+                color: #BABABA;
+            }
+            input:-ms-input-placeholder {
+                //      line-height: 1.0rem;
+            }
+            input:-moz-placeholder {
+                //      line-height: 1.0rem;
+            }
+            input::-moz-placeholder {
+                //      line-height: 1.0rem
+            }
+        }
+        .form-item:last-child{
+            border:none!important;
+        }
+    }
+    .ban {
+        color: $orange;
+    }
+    .disban {
+        color: $orange;
+    }
+    .flolayer {
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        text-align: center;
+        .inner {
+            width: 300px;
+            background: $white;
+            margin: auto;
+            margin-top: 125px;
+            border-radius: 5px;
+            position: relative;
+            i {
+                position: absolute;
+                right: -10px;
+                top: -10px;
+            }
+            h3 {
+                font-size: 18px;
+                line-height: 18px;
+                padding-top: 30px;
+                font-weight: 400;
+            }
+            .text {
+                margin: 15px 0;
+                p {
+                    text-align: left;
+                    margin: 10px 30px;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: $col6;
+                }
+            }
+            .Iagree {
+                background: rgb(252, 238, 237);
+                width: 100%;
+                height: 50px;
+                color: $orange
+            }
+        }
+    }
+    .lbtn-container{
+        padding:0 25px;
+        .alert{
+            color:$orange;
+            line-height: 25px;
+        }
+        .lbtn {
+            width: 100%;
+            height: 45px;
+            border-radius: 22.5px;
+            margin-top: 30px;
+            font-size: 15px;
+        }
+        .longbtn1 {
+            background: #cccccc;
+            color: $white;
+        }
+        .longbtn2 {
+            background: $orange;
+            color: $white;
+        }
+    }
+    
+    .agree {
+        position: relative;
+        font-size: 14px;
+        color: #999999;
+        margin-top: 18px;
+        div {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            span {
+                display: inline-block;
+                position: absolute;
+                margin-left: 8px;
+                line-height: 14px;
+                font-size: $font14;
+                color: $col9;
+                a {
+                    font-size: $font14;
+                    color: #3fa1fc;
+                    text-decoration: underline;
+                }
+            }
+            input {
+                width: 18px;
+                height: 18px;
+                opacity: 0;
+                position: absolute;
+                margin-top: -3px;
+            }
+            i {
+                color: #cccccc;
+                margin-top: -4px;
+            }
+            .icon-check {
+                margin-left: -22px;
+            }
+        }
+    }
+}

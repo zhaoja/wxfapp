@@ -1,0 +1,441 @@
+$orange: #FA5F3B;
+$blue:#40A9FF;
+$white: #ffffff;
+$grey: #cccccc;
+$col0:#000000;
+$col3:#333333;
+$col6:#666666;
+$col9:#999999;
+$colf5:#f5f5f5;
+$colc:#cccccc;
+$cole:#eeeeee;
+$orange2:#FA5F3B;
+$blue:#40A9FF;
+$headbgcolor:$white;
+$headcolor:$col3;
+
+$font12:12px;
+$font13:13px;
+$font14:14px;
+$font15:15px;
+$font16:16px;
+$font17:17px;
+$font18:18px;
+//首页
+.home {
+    background: #f6f6f6;
+    margin-bottom: 50px;
+    
+    .broadcast {
+        position: relative;
+        //height: 160px;
+        height: 160px;
+        .mt-swipe-item-img{
+            width:100%;
+            height:100%;
+            background-size: 100% auto;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .mint-swipe-indicator{
+            background-color: white;
+            opacity: 0.7;
+            &.is-active{
+                opacity: 1;
+                width:16px;
+                border-radius:16px;
+            }
+        }
+        .home-header{
+            position: fixed;
+            top:0;
+            left: 0;
+            width: 100vw;
+            z-index:2;
+            padding: 6px 10px;
+            display: flex;
+            .search-box{
+                flex:1;
+                height:32px;
+                border-radius: 20px;
+                padding:0 15px;
+                background-color: rgba(256,256,256,0.5);
+                display: flex;
+                float: left;
+                .icon-search{
+                    background-size: 198px 198px;
+                    background-position:-174px -120px;
+                    display: inline-block;
+                    width:16px;
+                    height:16px;
+                    margin-top:8px;
+                    margin-right:5px;
+                }
+                .search-control{
+                    flex:1;
+                    height:32px;
+                    line-height: 32px;
+                    background:none;
+                    font-size: $font14;
+                    color:$col9;
+                }
+                input::-webkit-input-placeholder {
+                    color:$col9;
+                    font-size: $font14;
+                    line-height: normal;
+                }
+                input::-webkit-input-placeholder { /* WebKit browsers */
+                  line-height: 32px;
+                }
+                input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                  line-height: 32px;
+                }
+                input::-moz-placeholder { /* Mozilla Firefox 19+ */
+                  line-height: 32px;
+                }
+                input:-ms-input-placeholder { /* Internet Explorer 10+ */
+                  line-height: 32px;
+                }
+            }
+            .qr-btn{
+                float: right;
+                margin-left: 15px;
+                width:32px;
+                height:32px;
+                border-radius: 30px;
+                background-color: rgba(0,0,0,0.3);
+                .icon-code{
+                    display: block;
+                    width:18px;
+                    height:18px;
+                    background-size:198px auto;
+                    background-position:-174px -40px;
+                    margin:7px;
+                }
+            }
+            &.bg-white{
+                background-color: white;
+                .search-box{
+                    background-color: $cole;
+                }
+                .qr-btn{
+                    background-color: $colc;
+                }
+            }
+			&.bottom{
+				position:absolute;
+			}
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .paragraph {
+        background: #ffffff;
+        .title {
+            margin-left: 15px;
+            height: 16px;
+            padding-left: 20px;
+            line-height: 16px;
+            font-size: $font16;
+            color: $col3;
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding:15px 0px;
+            li {
+                width: 25%;
+                text-align: center;
+                a {
+                    display: block;
+                }
+                span {
+                    display: block;
+                    font-size: $font14;
+                    line-height: 20px;
+                    margin-top:7px;
+                }
+                .icon-m {
+                }
+            }
+            li:nth-child(1){
+                margin-bottom:12px;
+            }
+        }
+    }
+    .recommendlist{
+        margin-top: 10px;
+        background: #ffffff;
+		min-height: calc(100vh - 160px - 186px - 10px - 50px);
+        .title {
+            padding-left: 20px;
+            height: 45px;
+            line-height: 45px;
+            font-size: 16px;
+            color: $col3;
+            border-bottom: 1px #E5E5E5 solid;
+        }
+        .loading-tip{
+            text-align: center;
+            padding:10px 0;
+            .mint-spinner-fading-circle{
+                margin:0 auto;
+            }
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            li {
+                width: 100%;
+                padding:16px 20px;
+                border-bottom: 1px #E5E5E5 solid;
+                p:first-child{
+                    height: 22px;
+                    line-height: 22px;
+                    margin-bottom: 12px;
+                    .name{
+                        font-size: $font16;
+                        color:$col3;
+                    }
+                    .pull-right{
+                        float: right;
+                        font-size: $font14;
+                        color:$col6;
+                    }
+                }
+                p{
+                    line-height: 15px;
+                    font-size: 12px;
+                    .text{
+                        color:$col6;
+                        font-size: $font14;
+                        line-height: 20px;
+                        display: inline-block;
+                    }
+                    .color-icon{
+                        font-size: $font12;
+                        width:15px;
+                        height:15px;
+                        color:white;
+                        border-radius: 2px;
+                        line-height: normal;
+                        float: right;
+                        margin-left: 10px;
+                        letter-spacing:0;
+                        overflow: hidden;
+                        position: relative;
+                        &.icon-blue{
+                            background-color: $blue;
+                        }
+                        &.icon-blue:after{
+                            content: '利';
+                        }
+                        &.icon-orange{
+                            background-color: $orange;
+                        }
+                        &.icon-orange:after{
+                            content: '折';
+                        }
+                        &:after{
+                            position: absolute;
+                            left:1.5px;
+                            top:-1px;
+                        }
+                    }
+                    .icon{
+                        display: inline-block;
+                        float: left;
+                        width:15px;
+                        height:15px;
+                        margin-top:1px;
+                        background-size: 198px 198px;
+                        margin-right:10px;
+                    }
+                    .icon-location{
+                        background-position:-174px -94px;
+                    }
+                    .icon-info{
+                        background-position:-174px -68px;
+                    }
+                }
+                p:last-child{
+                    margin-top:5px;
+                }
+                .icon-m {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+.home-search{
+     background-color: white;
+    .search-header{
+        padding:5px 10px;
+        padding-right:0px;
+        display: flex;
+        background-color: white;
+        .icon{
+            margin-top:7px;
+        }
+        input {
+            flex: 1;
+            height: 30px;
+            line-height: 30px;
+            display: table-cell;
+            vertical-align: middle;
+            border-radius: 15px;
+            margin-left: 15px;
+            padding: 0 15px;
+            background-color: #f5f5f5;
+        }
+        button {
+            width: 50px;
+            height: 30px;
+            font-size: $font15;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            color: $col3;
+            background-color: white;
+            outline: none;
+        }
+    }
+    .history{
+        padding:20px 20px;
+        .title{
+            .icon{
+                float: right;
+            }
+            span:first-child{
+                color:$col3;
+            }
+        }
+        ul{
+            margin-top:20px;
+            li{
+                display: inline-block;
+                font-size: $font12;
+                padding:5px 10px;
+                background-color: #f5f5f5;
+                border-radius: 5px;
+                margin-right:10px;
+                margin-bottom:20px;
+            }
+        }
+    }
+	.no{
+		text-align: center;
+		.img-no{
+			width:100%;
+		}
+	}
+    .recommendlist{
+        background: #ffffff;
+        .title {
+            padding-left: 20px;
+            height: 45px;
+            line-height: 45px;
+            font-size: 16px;
+            color: $col3;
+            border-bottom: 1px #E5E5E5 solid;
+        }
+        .loading-tip{
+            text-align: center;
+            padding:10px 0;
+            .mint-spinner-fading-circle{
+                margin:0 auto;
+            }
+        }
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            li {
+                width: 100%;
+                padding:16px 20px;
+                border-bottom: 1px #E5E5E5 solid;
+                p:first-child{
+                    height: 22px;
+                    line-height: 22px;
+                    margin-bottom: 12px;
+                    .name{
+                        font-size: $font16;
+                        color:$col3;
+                    }
+                    .pull-right{
+                        float: right;
+                        font-size: $font14;
+                        color:$col6;
+                    }
+                }
+                p{
+                    line-height: 15px;
+                    font-size: 12px;
+                    .text{
+                        color:$col6;
+                        font-size: $font14;
+                        line-height: 20px;
+                        display: inline-block;
+                    }
+                    .color-icon{
+                        font-size: $font12;
+                        width:15px;
+                        height:15px;
+                        color:white;
+                        border-radius: 2px;
+                        line-height: normal;
+                        float: right;
+                        margin-left: 10px;
+                        letter-spacing:0;
+                        overflow: hidden;
+                        position: relative;
+                        &.icon-blue{
+                            background-color: $blue;
+                        }
+                        &.icon-blue:after{
+                            content: '利';
+                        }
+                        &.icon-orange{
+                            background-color: $orange;
+                        }
+                        &.icon-orange:after{
+                            content: '折';
+                        }
+                        &:after{
+                            position: absolute;
+                            left:1.5px;
+                            top:-1px;
+                        }
+                    }
+                    .icon{
+                        display: inline-block;
+                        float: left;
+                        width:15px;
+                        height:15px;
+                        margin-top:1px;
+                        background-size: 198px 198px;
+                        margin-right:10px;
+                    }
+                    .icon-location{
+                        background-position:-174px -94px;
+                    }
+                    .icon-info{
+                        background-position:-174px -68px;
+                    }
+                }
+                p:last-child{
+                    margin-top:5px;
+                }
+                .icon-m {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
