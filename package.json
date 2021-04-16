@@ -16,7 +16,7 @@
     "dsbridge": "^3.1.4",
     "ginkgo-map": "^1.0.2",
     "jsencrypt": "^3.0.0-rc.1",
-    "jsrsasign": "^8.0.12",
+    "jsrsasign": "^10.2.0",
     "lib-flexible": "^0.3.2",
     "mescroll.js": "^1.4.0",
     "mint-ui": "^2.2.13",
